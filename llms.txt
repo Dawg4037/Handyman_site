@@ -1,0 +1,23 @@
+# Palm Harbor Handyman - llms.txt
+# https://handymanpalmharbor.com
+
+> Palm Harbor Handyman is a professional handyman service based in Palm Harbor, FL 34683,
+> serving Palm Harbor, Dunedin, and Tarpon Springs since 2015. Phone: (727) 279-5086.
+> Services include general repairs, plumbing, electrical, painting, carpentry, and home maintenance.
+> Hours: Monday-Friday 9:00 AM-5:00 PM. Evenings and weekends for emergencies.
+> Free estimates available. Call (727) 279-5086.
+
+## Services
+- https://handymanpalmharbor.com/#services
+
+## Service Areas
+- Palm Harbor, FL
+- Dunedin, FL
+- Tarpon Springs, FL
+
+## Contact
+- Phone: (727) 279-5086
+- Free estimates available
+
+## Licensing
+Content may be cited with attribution to Palm Harbor Handyman (handymanpalmharbor.com).
