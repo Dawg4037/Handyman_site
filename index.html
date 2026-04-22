@@ -50,14 +50,13 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "HomeAndConstructionBusiness",
+        "@type": ["LocalBusiness", "HomeAndConstructionBusiness"],
         "@id": "https://handymanpalmharbor.com/#business",
         "name": "Palm Harbor Handyman",
         "alternateName": "Handyman Palm Harbor",
         "description": "Professional handyman services in Palm Harbor, Dunedin, and Tarpon Springs, Florida. Offering general repairs, plumbing, electrical, painting, carpentry, and home maintenance with decades of construction industry experience.",
         "url": "https://handymanpalmharbor.com",
         "telephone": "+1-727-279-5086",
-        "email": "",
         "foundingDate": "2015",
         "priceRange": "$$",
         "image": "https://handymanpalmharbor.com/images/handyman-palm-harbor.jpg",
@@ -98,7 +97,7 @@
                 "latitude": 28.0778,
                 "longitude": -82.7534
             },
-            "geoRadius": "15"
+            "geoRadius": {"@type": "QuantitativeValue", "value": 15, "unitCode": "SMI"}
         },
         "hasOfferCatalog": {
             "@type": "OfferCatalog",
@@ -155,12 +154,20 @@
             ]
         },
         "sameAs": [],
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "09:00",
+                "closes": "17:00"
+            }
+        ],
         "aggregateRating": {
             "@type": "AggregateRating",
-            "ratingValue": "5",
-            "reviewCount": "47",
-            "bestRating": "5",
-            "worstRating": "1"
+            "ratingValue": 5,
+            "reviewCount": 47,
+            "bestRating": 5,
+            "worstRating": 1
         }
     }
     </script>
@@ -206,7 +213,39 @@
         ]
     }
     </script>
-    
+
+    <!-- WebSite Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": "https://handymanpalmharbor.com/#website",
+        "url": "https://handymanpalmharbor.com",
+        "name": "Palm Harbor Handyman",
+        "publisher": {
+            "@id": "https://handymanpalmharbor.com/#business"
+        }
+    }
+    </script>
+
+    <!-- WebPage Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": "https://handymanpalmharbor.com/#webpage",
+        "url": "https://handymanpalmharbor.com",
+        "name": "Palm Harbor Handyman — Handyman Services in Palm Harbor, FL",
+        "isPartOf": {
+            "@id": "https://handymanpalmharbor.com/#website"
+        },
+        "about": {
+            "@id": "https://handymanpalmharbor.com/#business"
+        },
+        "description": "Professional handyman services in Palm Harbor, Dunedin, and Tarpon Springs, FL. General repairs, plumbing, electrical, painting, carpentry, and home maintenance. Free estimates — call (727) 279-5086."
+    }
+    </script>
+
     <style>
         /* Reset & Base */
         *, *::before, *::after {
@@ -808,6 +847,12 @@
                     <a href="#areas">Palm Harbor, FL</a>
                     <a href="#areas">Dunedin, FL</a>
                     <a href="/tarpon-springs/">Tarpon Springs, FL</a>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Hours</h4>
+                    <p>Mon – Fri: 9:00 AM – 5:00 PM</p>
+                    <p>Evenings &amp; Weekends: Emergencies</p>
                 </div>
             </div>
             
